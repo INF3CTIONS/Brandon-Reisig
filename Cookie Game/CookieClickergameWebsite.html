@@ -1,0 +1,27 @@
+<html>
+	<body>
+		<center><h1>Cookie Clicker Game</h1>
+		<h3>By: Brandon Reisig</h3></center>
+		<p>Just click the cookie</p>
+		<img src = "cookie.jfif" id = "cookie" style = "width: 150px" onclick = "increment()">
+		<p>Cookie clicked: <span id = "counter">0</span> </p>
+		<button id = "reset" onclick = "reset()">reset</button>
+	</body>
+	<script>
+		var clicks = 0;
+		function increment(){
+			clicks = clicks + 1;
+			counter.innerHTML = clicks;
+		}
+		function reset(){
+			clicks = 0;
+			counter.innerHTML = clicks;
+		}
+	</script>
+	<style>
+		body{
+			background-color: DarkKhaki;
+			
+		}
+	</style>
+</html>
